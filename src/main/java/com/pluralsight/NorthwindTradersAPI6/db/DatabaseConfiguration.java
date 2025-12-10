@@ -1,4 +1,4 @@
-package com.pluralsight.NorthwindTradersAPI5.db;
+package com.pluralsight.NorthwindTradersAPI6.db;
 
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.springframework.beans.factory.annotation.Value;

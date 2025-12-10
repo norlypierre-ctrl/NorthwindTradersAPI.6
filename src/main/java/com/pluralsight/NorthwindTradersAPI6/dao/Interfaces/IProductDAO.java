@@ -1,6 +1,6 @@
-package com.pluralsight.NorthwindTradersAPI5.dao.Interfaces;
+package com.pluralsight.NorthwindTradersAPI6.dao.Interfaces;
 
-import com.pluralsight.NorthwindTradersAPI5.models.Product;
+import com.pluralsight.NorthwindTradersAPI6.models.Product;
 
 import java.util.List;
 

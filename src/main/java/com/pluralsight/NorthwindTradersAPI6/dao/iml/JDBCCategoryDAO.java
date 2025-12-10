@@ -1,7 +1,7 @@
-package com.pluralsight.NorthwindTradersAPI5.dao.iml;
+package com.pluralsight.NorthwindTradersAPI6.dao.iml;
 
-import com.pluralsight.NorthwindTradersAPI5.dao.Interfaces.ICategoryDAO;
-import com.pluralsight.NorthwindTradersAPI5.models.Category;
+import com.pluralsight.NorthwindTradersAPI6.dao.Interfaces.ICategoryDAO;
+import com.pluralsight.NorthwindTradersAPI6.models.Category;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
