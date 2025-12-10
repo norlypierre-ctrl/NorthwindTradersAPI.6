@@ -1,0 +1,25 @@
+package com.pluralsight.NorthwindTradersAPI5.models;
+
+public class Category {
+    private int categoryID;
+
+    public Category(int categoryID) {
+        this.categoryID = categoryID;
+    }
+
+    public int getCategoryID() {
+        return categoryID;
+    }
+
+    public void setCategoryID(int categoryID) {
+        this.categoryID = categoryID;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Category{" +
+                "categoryID=" + categoryID +
+                '}';
+    }
+}
