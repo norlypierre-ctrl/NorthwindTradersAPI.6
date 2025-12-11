@@ -92,7 +92,7 @@ public class JDBCCategoryDAO implements ICategoryDAO {
     @Override
     public void update(int CategoryID, Category category) {
         String updateDataQuery =
-                "UPDATE categories (categoryID) VALUES (?)";
+                "UPDATE categories WHERE categoryID = ?";
 
         try (Connection connection = dataSource.getConnection();
              PreparedStatement updateStatement = connection.prepareStatement(updateDataQuery)) {
@@ -108,7 +108,7 @@ public class JDBCCategoryDAO implements ICategoryDAO {
     @Override
     public void delete(int CategoryID, Category category) {
         String deleteDataQuery =
-                "DELETE categories (categoryID) VALUES (?)";
+                "DELETE categories WHERE categoryID = ?";
 
         try (Connection connection = dataSource.getConnection();
              PreparedStatement deleteStatement = connection.prepareStatement(deleteDataQuery)) {

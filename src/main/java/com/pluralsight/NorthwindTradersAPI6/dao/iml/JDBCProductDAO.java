@@ -93,7 +93,7 @@ import java.util.List;
         @Override
         public void update(int productID, Product product) {
             String updateDataQuery =
-                    "UPDATE products (productID) VALUES (?)";
+                    "UPDATE products WHERE productID = ?";
 
             try (Connection connection = dataSource.getConnection();
                  PreparedStatement updateStatement = connection.prepareStatement(updateDataQuery)) {
@@ -109,7 +109,7 @@ import java.util.List;
         @Override
         public void delete(int productID, Product product) {
             String deleteDataQuery =
-                    "DELETE products (productID) VALUES (?)";
+                    "DELETE FROM products WHERE productID = ?";
 
             try (Connection connection = dataSource.getConnection();
                  PreparedStatement deleteStatement = connection.prepareStatement(deleteDataQuery)) {
